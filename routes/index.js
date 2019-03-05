@@ -72,4 +72,21 @@ router.get('/ali',function (req, res, next){
 
 })
 
+
+router.post('/packback',function (req, res, next){
+	// let con = mysql.createConnection(config);
+	let data = req.body;
+	console.log(data);
+	// if(data.action == "publish_done"){
+	// 	console.log(data.id+"断流");
+	// }
+	// else if(data.action == ""){
+	// 	console.log(data.id+"推流成功");
+
+	// }
+	res.send(200);
+
+})
+
+
 module.exports = router;
