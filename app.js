@@ -5,16 +5,14 @@ var logger = require('morgan');
 var cors = require('cors');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var test = require('./min/test');
 var app = express();
 
-app.use(cors({
-    origin:['http://localhost:3007'],
-    methods:['GET','POST'],
-    alloweHeaders:['Conten-Type', 'Authorization']
-}));
+// app.use(cors({
+//     origin:['http://localhost:3007'],
+//     methods:['GET','POST'],
+//     alloweHeaders:['Conten-Type', 'Authorization']
+// }));
 
-app.use('/',test);
 
 
 app.use(logger('dev'));
