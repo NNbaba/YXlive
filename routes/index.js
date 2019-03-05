@@ -1,5 +1,5 @@
 var express = require('express');
-var mysql = require("myql");
+var mysql = require("mysql");
 var config = require("../min/connction");
 var router = express.Router();
 
