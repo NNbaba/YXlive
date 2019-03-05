@@ -17,7 +17,7 @@ router.get('/first', function(req, res, next) {
 router.get('/getauth', function(req, res, next) {
 	let id = req.query.id;
 	let str = "rtmp://yingxiutv.com";
-	let url = "/live/"+id;
+	let url = "/OAProjectLive/"+id;
 	const md5 = require("nodejs-md5");
 	let timt = Number.parseInt((new Date().getTime())/1000);
 	let time = timt + 1800;
