@@ -58,11 +58,17 @@ router.get('/getshuift', function(req, res, next) {
 });
 
 router.get('/ali',function (req, res, next){
-	con = mysql.createConnection(config);
+	// let con = mysql.createConnection(config);
+	let data = req.query;
+	console.log(data);
+	if(data.action == "publish_done"){
+		console.log(data.id+"断流");
+	}
+	else if(data.action == ""){
+		console.log(data.id+"推流成功");
 
-	console.log(req.query);
-	console.log(req.body);
-	con.end();
+	}
+	res.send(200);
 
 })
 
