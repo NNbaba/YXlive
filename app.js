@@ -9,7 +9,7 @@ var test = require('./min/test');
 var app = express();
 
 app.use(cors({
-    origin:['http://localhost:3000'],
+    origin:['http://localhost:80'],
     methods:['GET','POST'],
     alloweHeaders:['Conten-Type', 'Authorization']
 }));
