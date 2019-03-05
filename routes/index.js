@@ -82,7 +82,7 @@ router.post('/packback',function (req, res, next){
 	// }
 	// else if(data.action == ""){
 	// 	console.log(data.id+"推流成功");
-
+	//	https://help.aliyun.com/document_detail/84935.html?spm=a2c4g.11186623.6.624.4f7f6bedbq89SM
 	// }
 	res.send(200);
 
